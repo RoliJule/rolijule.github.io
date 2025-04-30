@@ -9,8 +9,6 @@ export default function App() {
     <HashRouter>          {/* Router provider */}
       <AnalyticsListener />  {/* ← fires page_view on every route change */}
 
-      <Header />
-
       <Routes>
         <Route path="/" element={<Home />} />
       </Routes>

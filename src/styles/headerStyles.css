@@ -1,11 +1,13 @@
 .siteHeader {
+    box-sizing: border-box;
     position: relative;
+    width: 100%;
     z-index: 999;
     display: flex;
     align-items: center;
     gap: 2rem;
     padding: 1rem;
-    background: var(--color-bg);
+    background: linear-gradient(180deg, var(--color-bg), #00000000);
 }
 
 .siteHeader.flicker-start{
