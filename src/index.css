@@ -1,18 +1,29 @@
 :root {
-  /* base */
-  --color-bg:#0F1316;
-  --color-surface:#1A1E23;
+  /* Base & Structure */
+  --color-bg: #FAF9F6;
+  --color-surface: #FFFFFF;
 
-  /* brand hues */
-  --color-primary:#34D16E;
-  --color-secondary:#8B5CFF;
-  --color-accent:#FF5A5A;
-  --color-support:#35C4A1;   /* optional */
+  /* Typography */
+  --color-text-primary: #2C2C2C;
+  --color-text-secondary: #6E6E6E;
 
-  /* text */
-  --color-text-primary:#EAECEE;
-  --color-text-secondary:#A2A9B3;
+  /* Brand & Accents */
+  --color-primary: #705DF2;
+  --color-primary-dark: #5A49D1; /* hover/focus variant */
+  --color-accent: #90A8C3;
+
+  /* Semantic / Utility */
+  --color-success: #9DCFAB;
+  --color-success-dark: #8DBD9C;
+  --color-warning: #F5D48A;
+  --color-error: #E17C7C;
+  --color-info: #B4C7E7;
+
+  /* Interactive States */
+  --color-hover-bg: #F0F0FF; /* for secondary hover */
+  --color-link-hover: #503AC0;
 }
+
 
 /* In your index.css or App.css */
 @font-face {
