@@ -1,0 +1,65 @@
+.screen-wrapper {
+    position: relative;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 4vw 4vw 6vw;
+    height: 91vh;
+  }
+  
+  .screen-bezel {
+    position: relative;
+    box-sizing: border-box;
+    width: 90vw;
+    height: 80vh;
+    background: var(--color-text-primary);
+    border: .5vw solid var(--color-surface);
+    border-radius: .5vw;
+    box-shadow: inset 0 0 .5vw rgba(0, 0, 0, 0.7), 0 .5vw 1vw rgba(0, 0, 0, 0.5);
+    z-index: 2;
+  }
+  .stand-neck {
+    position: absolute;
+    bottom: -2vw;
+    width: 40vw;
+    height: 10vw;
+    background: #444;
+    margin: 0 auto;
+    border-radius: 4px;
+    z-index: 1;
+    overflow: hidden;
+  }
+  
+  .stand-neck::before {
+    display: block;
+    content: "";
+    width: 50%;
+    height: 120%;
+    position: absolute;
+    top: -26%;
+    left: -30%;
+    border-radius: 41%;
+    background: #ffffff;
+  }
+  .stand-neck::after{
+    display: block;
+    content: "";
+    width: 50%;
+    height: 120%;
+    position: absolute;
+    top: -26%;
+    right: -30%;
+    border-radius: 41%;
+    background: #ffffff;
+  }
+  
+  .screen-content {
+    box-sizing: border-box;
+    height: 100%;
+    background: var(--color-text-primary);
+    font-family: 'Courier New', monospace;
+    position: relative;
+    overflow: hidden;
+  }
