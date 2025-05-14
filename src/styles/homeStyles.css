@@ -1,7 +1,9 @@
 #home-section {
   width: 100vw;
   height: 100vh;
+  max-height: 100vh;
   background: var(--color-text-primary);
+  overflow: hidden;
 }
 
 svg.screen-icon {
@@ -34,11 +36,12 @@ svg.screen-icon {
 }
 
 /* Introduction Header */
-div#introduction-wrapper {
+#introduction-wrapper {
   position: absolute;
-  top: 10vw;
+  top: -5vw;
   bottom: 0;
   left: 6vw;
+  margin: auto;
   width: calc(50% - 6vw);
   height: fit-content;
 }
@@ -70,58 +73,54 @@ div#profile-wrapper {
   position: absolute;
   top: 0;
   bottom: 0;
-  right: 5vw;
+  right: 8vw;
   margin: auto;
   height: 50vh;
 }
-#profile-wrapper::before {
-  position: absolute;
-  top: -15%;
-  left: -10%;
-  content: "";
-  display: block;
-  width: 56%;
-  height: 120%;
-  border-top-left-radius: 10vw;
-  border-bottom-left-radius: 7vw;
-  background: var(--color-primary-dark);
-  z-index: 1;
-  transform: translateY(-5vw);
-  transition: transform 0.5s ease;
-}
+#profile-wrapper::before, 
 #profile-wrapper::after {
   position: absolute;
-  top: 5%;
-  right: -10%;
   content: "";
   display: block;
-  width: 56%;
-  height: 110%;
-  border-top-right-radius: 6vw;
-  border-bottom-right-radius: 10vw;
-  background: var(--color-success);
+  width: 22vw;
+  max-width: 56%;
+  height: 63vw;
+  max-height: 120%;
   z-index: 1;
-  transform: translateY(5vw);
   transition: transform 0.5s ease;
 }
 
-#profile-wrapper.inview::before,
-#profile-wrapper.inview::after {
+#profile-wrapper::before {
+  top: -15%;
+  left: -10%;
+  border-top-left-radius: 10vw;
+  border-bottom-left-radius: 7vw;
+  transform: translateY(-10vw);
+  background: var(--color-primary-dark);
+}
+#profile-wrapper::after {
+  top: 5%;
+  right: -10%;
+  border-top-right-radius: 6vw;
+  border-bottom-right-radius: 10vw;
+  transform: translateY(10vw);
+  background: var(--color-success);
+}
+
+#profile-wrapper.profile-inview::before,
+#profile-wrapper.profile-inview::after {
   transform: translateY(0);
 }
 
 #profile-img {
   position: relative;
-  height: 100%;
+  height: 50vw;
+  max-height: 100%;
   object-fit: contain;
   z-index: 2;
   filter: drop-shadow(0px 1px 6px var(--color-text-primary));
 }
 
 @media (max-width: 580px) {
-  .intro-message {
-    font-size: 4vw;
-    line-height: 5.5vw;
-  }
 
 }
