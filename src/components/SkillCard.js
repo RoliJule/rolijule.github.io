@@ -1,10 +1,11 @@
 import React from "react";
+import "../styles/skillCardStyles.css";
 
 const SkillCard = ({skill, logo}) => {
     return (
         <div className="skill-card"> 
             <p>{skill}</p>
-            <hr></hr>
+            <div className="seperator"></div>
             <img src={logo} alt={skill}></img>
         </div>
     );

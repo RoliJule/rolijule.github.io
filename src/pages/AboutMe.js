@@ -1,4 +1,5 @@
 import React from "react";
+import "../styles/aboutMe.css";
 import docker from "../assets/Logos/Docker_Logo_516x516.png"
 import javascript from "../assets/Logos/Javascript_Logo_516x516.png"
 import mongodb from "../assets/Logos/Mongodb_Logo_516x516.png"
@@ -6,22 +7,19 @@ import php from "../assets/Logos/PHP_Logo_516x516.png"
 import python from "../assets/Logos/Python_Logo_516x516.png"
 import reactLogo from "../assets/Logos/React_Logo_516x516.png"
 import SkillCard from "../components/SkillCard";
+import RJLogo from "../components/icons/RJLogo";
 
 
 const AboutMe = () => {
   return (
     <section id="about-section">
       {/* Visual/Avatar Section */}
-      <div className="w-full md:w-1/2 flex justify-center md:justify-start">
-        <img
-          src="/images/avatar-placeholder.png" // Replace with your image path
-          alt="Rolando Jule-Blanco"
-          className="w-64 h-64 object-cover rounded-2xl shadow-xl hover:scale-105 transition-transform duration-300"
-        />
+      <div id="about-icon-card">
+        <RJLogo className={'about-icon'}/>
       </div>
 
       {/* Text Section */}
-      <div className="">
+      <div id="about-text-wrapper">
         <h2 className="">About Me</h2>
         <p className="">
           I’m a Full Stack Developer with a strong balance between front-end and
@@ -43,7 +41,7 @@ const AboutMe = () => {
         </p>
 
         {/* Tech Icons */}
-        <div className="">
+        <div className="skill-wrapper">
           <SkillCard skill="React" logo={reactLogo} />
           <SkillCard skill="Javascript" logo={javascript} />
           <SkillCard skill="Python" logo={python} />

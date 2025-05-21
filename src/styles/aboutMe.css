@@ -1,0 +1,22 @@
+#about-section {
+    position: relative;
+    box-shadow: 0vw 0vw 3vw 0vw #00000080;
+    z-index: 2;
+}
+#about-text-wrapper {
+    width: 50%;
+}
+#about-icon-card {
+    width: 50%;
+}
+svg.about-icon {
+  margin: auto;
+  width: fit-content;
+  height: 70%;
+  z-index: 1;
+  fill: #6e6e6e24;
+}
+
+#about-text-wrapper {
+    widht: 50%
+}

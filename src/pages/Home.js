@@ -1,5 +1,5 @@
 import { useEffect } from 'react';
-import styles from '../styles/homeStyles.css';
+import '../styles/homeStyles.css';
 import RJLogo from '../components/icons/RJLogo';
 import Message  from '../components/Message';
 import portrait from '../assets/Portrait/portrait-cutout.png';
