@@ -1,13 +1,21 @@
 #about-section {
     position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 4vw;
+    padding: 4vw;
     box-shadow: 0vw 0vw 3vw 0vw #00000080;
     z-index: 2;
 }
-#about-text-wrapper {
-    width: 50%;
-}
 #about-icon-card {
-    width: 50%;
+    display: flex;
+    width: 20vw;
+    padding: 2vw;
+    border-radius: 2vw;
+    box-shadow: 0 0 10px 0px var(--color-text-primary);
+    align-items: center;
+    justify-content: center;
 }
 svg.about-icon {
   margin: auto;
@@ -17,6 +25,10 @@ svg.about-icon {
   fill: #6e6e6e24;
 }
 
+
 #about-text-wrapper {
-    widht: 50%
+    width: calc(100% - 20vw);
+}
+div#about-text-wrapper h2 {
+    margin: auto;
 }
