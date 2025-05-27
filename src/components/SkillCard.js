@@ -6,7 +6,7 @@ const SkillCard = ({skill, logo}) => {
         <div className="skill-card"> 
             <p>{skill}</p>
             <div className="seperator"></div>
-            <img src={logo} alt={skill}></img>
+            <img src={logo} alt={`${skill} Logo`}></img>
         </div>
     );
 };
