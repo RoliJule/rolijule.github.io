@@ -24,7 +24,7 @@
     justify-content: center;
     transition-duration: 1s;
 }
-div#about-icon-card:hover {
+#about-icon-card:hover {
     transform: rotate3d(0, 1, 0, 180deg);
 }
 svg.about-icon {
@@ -58,4 +58,15 @@ svg.about-icon {
     justify-content: center;
     width: 70vw;
     margin: auto;
+}
+
+.skill-card {
+  opacity: 0;
+  transform: translateY(80px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+  will-change: transform, opacity;
+}
+.skill-card.fly-in {
+  opacity: 1;
+  transform: translateY(0);
 }

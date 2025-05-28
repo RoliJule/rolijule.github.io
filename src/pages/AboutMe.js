@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import React from "react";
 import "../styles/aboutMe.css";
 import reactLogo from "../assets/Logos/React_Logo_516x516.png"
@@ -16,6 +17,33 @@ import RJLogo from "../components/icons/RJLogo";
 
 
 const AboutMe = () => {
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach(entry => {
+          const inView = entry.target.dataset.skillsClass;
+          if (!inView) return;
+
+          if (entry.isIntersecting) {
+            entry.target.classList.add(inView);
+          } else {
+            entry.target.classList.remove(inView);
+          }
+        });
+      },
+      {
+        threshold: 0.25, // 25% must be visible before triggering
+      }
+    );
+
+    const elements = document.querySelectorAll('[data-skills-class]');
+    elements.forEach(el => observer.observe(el));
+
+    return () => observer.disconnect();
+  }, []);
+
+
   return (
     <section id="about-section">
       {/* Visual/Avatar Section */}
@@ -49,17 +77,17 @@ const AboutMe = () => {
       </div>
       <h2 className="section-title">Skills</h2>
       <div className="skill-wrapper">
-          <SkillCard skill="React" logo={reactLogo}/>
-          <SkillCard skill="NodeJs" logo={nodejs}/>
-          <SkillCard skill="Javascript" logo={javascript}/>
-          <SkillCard skill="C" logo={cprogramming} />
-          <SkillCard skill="Python" logo={python} />
-          <SkillCard skill="Docker" logo={docker} />
-          <SkillCard skill="PHP" logo={php} />
-          <SkillCard skill="MongoDB" logo={mongodb} />
-          <SkillCard skill="GitHub" logo={github} />
-          <SkillCard skill="Linode" logo={linode} />
-          <SkillCard skill="Wordpress" logo={wordpressLogo} />
+          <SkillCard skill="React" logo={reactLogo} dataClass="fly-in"/>
+          <SkillCard skill="NodeJs" logo={nodejs} dataClass="fly-in"/>
+          <SkillCard skill="Javascript" logo={javascript} dataClass="fly-in"/>
+          <SkillCard skill="C" logo={cprogramming} dataClass="fly-in"/>
+          <SkillCard skill="Python" logo={python} dataClass="fly-in"/>
+          <SkillCard skill="Docker" logo={docker} dataClass="fly-in"/>
+          <SkillCard skill="PHP" logo={php} dataClass="fly-in"/>
+          <SkillCard skill="MongoDB" logo={mongodb} dataClass="fly-in"/>
+          <SkillCard skill="GitHub" logo={github} dataClass="fly-in"/>
+          <SkillCard skill="Linode" logo={linode} dataClass="fly-in"/>
+          <SkillCard skill="Wordpress" logo={wordpressLogo} dataClass="fly-in"/>
       </div>
     </section>
   );
