@@ -1,0 +1,26 @@
+.job-card {
+    width: 80vw;
+    padding: 1rem;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px 0px var(--color-text-secondary);
+    background: var(--color-surface);
+    overflow: hidden;
+}
+.job-header {
+    display: flex;
+    gap: 1rem;
+    padding: 1rem;
+    border-top: 1px solid;
+    border-left: 1px solid;
+    border-right: 1px solid;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+}
+img.job-logo {
+    width: 40%;
+    border-radius: 10px;
+}
+h1.job-title {
+    width: 60%;
+    margin: auto;
+}

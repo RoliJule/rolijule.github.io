@@ -39,10 +39,11 @@ function Home() {
                 </div>
                 <RJLogo className={'screen-icon'}/>
                 <div id="profile-wrapper" data-inview-class="profile-inview">
-                    <img id="profile-img" src={portrait} />
+                    <img id="profile-img" src={portrait} alt="Rolando Jule"/>
                 </div>
             </section>
             <AboutMe />
+            <Experience />
         </>
     );
 }
