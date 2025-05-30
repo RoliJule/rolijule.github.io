@@ -34,3 +34,12 @@
     height: 100%;
     box-sizing: border-box;
 }
+
+@media (max-width: 1400px) {
+    .skill-wrapper {
+        width: 85vw;
+    }
+    .skill-card p {
+        font-size: 1.7vw;
+    }
+}

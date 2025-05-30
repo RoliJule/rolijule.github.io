@@ -5,6 +5,7 @@ import Message  from '../components/Message';
 import portrait from '../assets/Portrait/portrait-cutout.png';
 import Header from '../components/Header';
 import AboutMe from './AboutMe';
+import Experience from './Experience';
 
 function Home() {
 

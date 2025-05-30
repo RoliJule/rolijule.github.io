@@ -70,3 +70,22 @@ svg.about-icon {
   opacity: 1;
   transform: translateY(0);
 }
+
+@media (max-width: 1400px) {
+    .bio-wrapper {
+        width: 100%;
+    }
+    #about-icon-card {
+       width: 25vw;
+    }
+    #about-text-wrapper {
+        width: calc(100% - 25vw);
+    }
+    .about-text {
+        font-size: 1.5vw;
+    }
+
+    .skill-card p {
+        font-size: 1.5vw;
+    }
+}
