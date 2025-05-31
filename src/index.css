@@ -50,8 +50,19 @@ body {
 section {
   box-sizing: border-box;
 }
+.section-title {
+    margin: auto auto 1.5vw;
+    text-align: center;
+    font-size: max(3vw, 30px);
+}
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+@media (max-width:992px) {
+  .section-title {
+    margin: auto auto 2vw;
+  }
 }

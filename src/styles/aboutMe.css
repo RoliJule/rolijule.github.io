@@ -1,7 +1,7 @@
 #about-section {
     position: relative;
-    padding: 10vw 4vw;
-    min-height: 100vh;
+    padding: 10vw 6vw;
+    height: fit-content;
     box-shadow: 0vw 0vw 3vw 0vw #00000080;
     z-index: 1;
 }
@@ -10,7 +10,6 @@
     flex-direction: row;
     align-items: center;
     gap: 4vw;
-    width: 80vw;
     margin: auto;
     margin-bottom: 4vw;
 }
@@ -35,11 +34,6 @@ svg.about-icon {
     filter: drop-shadow(0px 0px 6px rgb(187, 187, 187));
 }
 
-.section-title {
-    margin: auto auto 1.5vw;
-    text-align: center;
-    font-size: 3vw;
-}
 #about-text-wrapper {
     width: calc(100% - 20vw);
 }
@@ -87,5 +81,20 @@ svg.about-icon {
 
     .skill-card p {
         font-size: 1.5vw;
+    }
+}
+
+@media (max-width: 992px) {
+    .bio-wrapper {
+        flex-direction: column;
+    }
+    #about-text-wrapper h2 {
+        text-align: center;
+    }
+    #about-text-wrapper {
+        width: 100%;
+    }
+    .about-text {
+        font-size: max(2vw, 14px);
     }
 }

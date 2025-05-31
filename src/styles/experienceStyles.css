@@ -1,0 +1,8 @@
+.viewport {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+}
+.job-card {
+    width: 33%;
+}

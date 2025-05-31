@@ -1,3 +1,5 @@
+import "../styles/jobCardStyles.css"
+
 const JobCard = ({experience}) => {
 
     return (

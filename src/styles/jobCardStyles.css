@@ -1,5 +1,5 @@
 .job-card {
-    width: 80vw;
+    width: 33.33%;
     padding: 1rem;
     border-radius: 20px;
     box-shadow: 0px 0px 10px 0px var(--color-text-secondary);
@@ -24,3 +24,9 @@ h1.job-title {
     width: 60%;
     margin: auto;
 }
+
+.job-responsibilites {
+    height: 0px;
+    overflow: hidden;
+}
+
